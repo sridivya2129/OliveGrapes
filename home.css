@@ -1,0 +1,147 @@
+.logo{
+    width:125px;
+}
+#searchbutton{
+    background-color:#1e2f97;
+    height:30px !important;
+    border-radius:10px;
+
+}
+
+.navbarbg{
+     background-image: linear-gradient(#1e2f97, #ffd93d, white);
+}
+
+.icons{
+    font-size:30px;
+    color:#1e2f97 ;
+    margin-right:10px;
+
+}
+
+.banner2image{
+    background-image:url("https://www.geomix.co.in/images/gallery/Geomix_concrete_plant_kannur.jpg");
+    background-size:cover;
+    height:400px;
+}
+
+@media(max-width:768px){
+    .banner2image{
+        height:200px;
+    }
+}
+
+.bgcolor {
+    background-color: #ffffa1;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:100px
+}
+
+.gallery {
+    display: flex;
+    width: 900px;
+    overflow: auto;
+    margin: 10px;
+
+
+}
+
+
+
+.images {
+    width: 300px;
+    height: 300px;
+}
+
+.gallery div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+
+
+
+
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media(max-width: 575px) {
+    .gallery {
+        width: 220px;
+    }
+
+    .images {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media(min-width:576px) and (max-width: 767px) {
+    .gallery {
+        width: 520px;
+    }
+
+    .images {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    .gallery {
+        width: 620px;
+
+    }
+
+    .images {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width:992px) and (max-width: 1200px) {
+    .gallery {
+        width: 900px;
+    }
+
+    .images {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.arrows {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.singlearrow {
+    color: white;
+    background-color: #1e2f97;
+    border-radius: 100%;
+    font-size: 30px;
+}
+
+#backbtn,
+#nextbtn {
+    cursor: pointer;
+    padding: 2%;
+}
+
+.gallery div img {
+    transition: transform 0.5s;
+}
+
+.gallery div img:hover {
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
